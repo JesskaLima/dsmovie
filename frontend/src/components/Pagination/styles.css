@@ -12,7 +12,7 @@
    align-items: center;
 }
 
-.dsmovie-pagination-box {
+.dsmovie-pagination-box form {
    width: 100%;
    display: flex;
 }
@@ -25,7 +25,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   border: var solid from 1px (--color-primary);
+   border: var solid from 1 px (--color-primary);
    cursor: pointer;
 }
 
@@ -33,17 +33,17 @@
     filter :  brightness(0) saturate(100%) invert(26%) sepia(19%) saturate(7395%) hue-rotate(234deg)  brightness(89%) contrast(92%);
 }
 
-.dsmovie-pagination-button-disabled {
+.dsmovie-pagination-button:disabled {
    border:  1px solid #c2c2c2;
    cursor: undefined;
 }
 
-.dsmovie-pagination-button-svg-disabled  {
+.dsmovie-pagination-button:disabled svg  {
     filter: none;
 }
 
-.dsmovie-pagination-container-p {
-    margin: 0;
+.dsmovie-pagination-container p {
+   margin: 0;
    font-size: 12px;
    color: var( --color-primary);
 }
