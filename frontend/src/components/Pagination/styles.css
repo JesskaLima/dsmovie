@@ -25,7 +25,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   border: var solid from 1 px (--color-primary);
+   border: var solid from 1px (--color-primary);
    cursor: pointer;
 }
 
