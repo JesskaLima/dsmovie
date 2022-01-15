@@ -2,23 +2,23 @@ import {
   BrowserRouter,
   Routes,
   Route
-}  from  "react-router-dom"; 
-import  Listing  from  'pages/Listing'; 
-import  Form  from  'pages/form'; 
-import  Navbar  from  "components/navbar";
+} from "react-router-dom";
+import Listing from 'pages/Listing';
+import Form from 'pages/form';
+import Navbar from "components/navbar";
 
-function  App()  {
+function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element= {<Listing />}/>
+        <Route path="/" element={<Listing />} />
         <Route path="/form">
-          <Route path= ":FilmeID" element={<Form />}/>
+          <Route path=":movieId" element={<Form />} />
         </Route>
-        </Routes>
-        </BrowserRouter>
-        ); 
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-        export default  App;
+export default App;
