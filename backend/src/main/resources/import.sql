@@ -1,7 +1,3 @@
-spring.profiles.active=${APP_PROFILE:test}
-
-spring.jpa.open-in-view=false
-
 INSERT INTO tb_user(email) VALUES ('maria@gmail.com');
 INSERT INTO tb_user(email) VALUES ('joao@gmail.com');
 INSERT INTO tb_user(email) VALUES ('ana@gmail.com');
