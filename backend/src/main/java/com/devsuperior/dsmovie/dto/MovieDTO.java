@@ -18,16 +18,14 @@ public class MovieDTO {
 		this.score = score;
 		this.count = count;
 		this.image = image;
-	}
-	
+	}	
 	public MovieDTO(Movie movie) {
 		id = movie.getId();
 		title = movie.getTitle();
 		score = movie.getScore();
 		count = movie.getCount();
 		image = movie.getImage();
-	
-	}
+		}
 
 	public Long getId() {
 		return id;

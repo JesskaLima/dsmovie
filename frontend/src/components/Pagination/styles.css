@@ -25,7 +25,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   border: var solid from 1px (--color-primary);
+   border: 1px solid var(--color-primary);
    cursor: pointer;
 }
 
@@ -35,7 +35,7 @@
 
 .dsmovie-pagination-button:disabled {
    border:  1px solid #c2c2c2;
-   cursor: undefined;
+   cursor: unset;
 }
 
 .dsmovie-pagination-button:disabled svg  {

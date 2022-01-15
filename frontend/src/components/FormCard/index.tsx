@@ -10,21 +10,19 @@ type Props = {
     movieId: string;
 }
 
-function FormCard({ movieId } : Props) {
-
+function Form({ movieId } : Props) {    
     const navigate = useNavigate();
-
     const [movie, setMovie] = useState<Movie>();
-
-    useEffect(() => {
+    useEffect(() =>{
         axios.get(`${BASE_URL}/movies/${movieId}`)
-            .then(response => {
+            .then(response =>{
                 setMovie(response.data);
             });
     }, [movieId]);
 
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = (event : React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+      
 
         const email = (event.target as any).email.value;
         const score = (event.target as any).score.value;
@@ -48,7 +46,7 @@ function FormCard({ movieId } : Props) {
         });
     }
 
-            return (
+    return (
         <div className="dsmovie-form-container">
             <img className="dsmovie-movie-card-image" src={movie?.image} alt={movie?.title} />
             <div className="dsmovie-card-bottom-container">
@@ -78,6 +76,6 @@ function FormCard({ movieId } : Props) {
 
             </div >
         </div >
-    );
+    )
 }
-export default FormCard;
+export default Form;
